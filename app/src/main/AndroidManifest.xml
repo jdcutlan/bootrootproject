@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.joe.bootrootproject"> <!-- This is the Manifest file, it holds important information about the application -->
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Allows the application to access the internet -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" /> <!-- Runs the Splash screen before other activities -->
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainMenu" /> <!-- The main menu activity -->
+        <activity android:name=".LeagueTable" /> <!-- The league table activity -->
+        <activity android:name=".FixturesTable"></activity> <!-- The fixtures table activity -->
+        <activity android:name=".PlayerStats"></activity> <!-- player statistics -->
+        <activity android:name=".Rumney"></activity> <!-- The Rumney activity -->
+        <activity android:name=".JoeCutlanPage"></activity> <!-- The activity displaying information about myself -->
+        <activity android:name=".PhotosAndVideos"></activity> <!-- The photos and videos activity -->
+        <activity android:name=".LiveWeather"></activity> <!-- The live weather activity -->
+        <activity android:name=".ParkingInformation"></activity> <!-- The parking information activity -->
+        <activity android:name=".StaffAndContactInfo"></activity> <!-- The staff and contact info activity -->
+        <activity android:name=".RumneyStaff"></activity> <!-- The Rumney staff activity -->
+        <activity android:name=".Grounds"></activity> <!-- The football grounds activity -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAemGh1hsLXt8P9ghBaJjPNSJbA1ufq8js"/> <!-- The Google Maps API Key -->
+    </application>
+
+</manifest>
